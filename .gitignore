@@ -1,0 +1,9 @@
+# env files
+.ENV.json
+
+# idea files
+/.idea/
+*.iml
+
+# debug files
+debug.txt
