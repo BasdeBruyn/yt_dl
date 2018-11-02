@@ -38,6 +38,7 @@ class Timer:
 
 
 debugFileName = 'debug.txt'
+outputLocation = '.'  # Put your output location here
 conversionTimer = Timer()
 
 
@@ -53,7 +54,7 @@ def my_hook(d):
 
 def downlaod(yt_link):
     ydl_opts = {'noplaylist': True,
-                'outtmpl': 'D:\OneDrive\Muziek\yt_dl\%(title)s.%(ext)s',
+                'outtmpl': outputLocation + '\%(title)s.%(ext)s',
                 'format': 'bestaudio/best',
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
